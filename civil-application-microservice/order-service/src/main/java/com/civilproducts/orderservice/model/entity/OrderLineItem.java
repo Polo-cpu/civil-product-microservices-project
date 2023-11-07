@@ -1,7 +1,6 @@
 package com.civilproducts.orderservice.model.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -14,8 +13,13 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Table(name = "order_line_items")
 public class OrderLineItem {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
-    private BigDecimal price;
+    @Column(name = "price")
+    private Double price;
+    @Column(name = "quantity")
     private Integer quantity;
 
 

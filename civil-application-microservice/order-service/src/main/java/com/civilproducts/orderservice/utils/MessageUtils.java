@@ -1,6 +1,7 @@
 package com.civilproducts.orderservice.utils;
 
-import com.civilproducts.orderservice.model.enums.Language;
+
+import com.civilproducts.orderservice.enums.Language;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 

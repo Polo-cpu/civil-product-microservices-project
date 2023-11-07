@@ -10,7 +10,7 @@ import java.util.List;
 @Builder
 public class InternalApiResponse<T> {
     private MessageResponse messageResponse;
-    private T payload;
+    private List<T> payload;
     private boolean hasError;
     private List<String> errorMessages;
     private HttpStatus httpStatus;

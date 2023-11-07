@@ -1,6 +1,7 @@
 package com.civilproducts.orderservice.exception;
 
-import com.civilproducts.orderservice.model.enums.Language;
+
+import com.civilproducts.orderservice.enums.Language;
 import com.civilproducts.orderservice.utils.IMessageCodes;
 import com.civilproducts.orderservice.utils.MessageUtils;
 import lombok.Getter;
